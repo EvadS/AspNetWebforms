@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MyMaster.master.cs" Inherits="Labwork_AspNetWebForms.MyMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>lab work 1 </title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #slct1 {
+            width: 216px;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <div>
+            <table cellspacing="0" cellpadding="0" border="1" width="100%" height="100%">
+                <tr height="10%">
+                    <td>
+                        <span>Span
+                        </span>
+                    </td>
+
+                    <td>
+                        <input type="text" value="input1" />
+                    </td>
+                    <td>
+                        <input id="Radio1" type="radio" /><br />
+                        <input id="Radio2" type="radio" />
+                    </td>
+                    <td>
+                        <input id="Button1" type="button" value="button" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="slct1" />
+                        <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                    </td>
+                    <td>
+                        <textarea id="TextArea1" cols="20" rows="2"></textarea>
+
+                    </td>
+                    <td>
+                        <image id="img1" src="img.png"/>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="cbx1" />
+                        <input type="checkbox" id="cbx2" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Row Three -->
+                        <input type="text" style="width: 168px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                        <input type="file" />
+                        <!-- Row Four -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="image" value="input" style="width: 48px"/>
+                        <!-- Row Five -->
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </div>
+        <br />
+        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <br />
+    </form>
+</body>
+</html>
